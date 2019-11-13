@@ -7,7 +7,7 @@
       			$check ="SELECT * FROM gebruiker WHERE naam = '$username' AND wachtwoord = '$password'";
       $result = mysqli_query($conn, $check);
       if (mysqli_num_rows($result) > 0) {
-        setcookie ("ingelogd", $_POST['username'], time() + 10 * 30);
+        setcookie ("ingelogd", $_POST['username'], time() + 86400 * 30);
       	header("Location: https://localhost/jaar3/projectenP9/homepage.php");
       } else {
         echo "error foute user of wachtwoord";
