@@ -35,7 +35,7 @@
           <p>Vitaliteit</p>
         </div>
       </a>
-      <a href="resulaten">
+      <a href="resulaten.php">
         <div class="box">
           <p>Resultaten & vooruitgang</p>
         </div>
