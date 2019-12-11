@@ -50,7 +50,8 @@
             include("connectdb.php.php");
             $gebruiker = $_POST['newnaam'];
             $wachtwoord = $_POST['newwachtwoord'];
-            $insertnaam ="INSERT INTO gebruiker(naam, wachtwoord) VALUES ('$gebruiker','$wachtwoord')";
+            $wachtwoordd = md5($wachtwoord);
+            $insertnaam ="INSERT INTO gebruiker(naam, wachtwoord) VALUES ('$gebruiker','$wachtwoordd')";
             $result = mysqli_query($conn, $insertnaam);
             header("Location: https://localhost/jaar3/projectenP9/startscherm.php");
         }

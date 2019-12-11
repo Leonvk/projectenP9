@@ -4,7 +4,8 @@
       			include("connectdb.php");
       			$username = $_POST['username'];
       			$password = $_POST['password'];
-      			$check ="SELECT * FROM gebruiker WHERE naam = '$username' AND wachtwoord = '$password'";
+            $wachtwoordd = md5($password);
+      			$check ="SELECT * FROM gebruiker WHERE naam = '$username' AND wachtwoord = '$wachtwoordd'";
       $result = mysqli_query($conn, $check);
       if (mysqli_num_rows($result) > 0) {
         setcookie ("ingelogd", $_POST['username'], time() + 86400 * 30);
