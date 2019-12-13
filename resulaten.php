@@ -7,7 +7,7 @@
 	if ($result1->num_rows > 0) {
 		 while($row = $result1->fetch_assoc()) {
 		 	$sizeVitaliteit = $row["COUNT(*)"];
-		 }
+		 }          
 	}
 
 	$sql2= "SELECT COUNT(*) FROM oefening WHERE `gebruikersID` = $id;";
@@ -22,14 +22,14 @@
 ?>
 <h1 class="titel"> Resultaten </h1>
 <div class="boxen-container">
-	<a href="">
+	<a href="https://localhost/jaar3/projectenP9/resultaatOefeningen.php">
        <div class="box">
          <p>Oefeningen</p>
          <p class="klein"><?php  echo "$sizeOefening";?></p>
        </div> 
     </a>
 
-    <a href="">
+    <a href="https://localhost/jaar3/projectenP9/resultaatVitaliteit.php">
        <div class="box">
          <p>Vitaliteit</p>
          <p class="klein"><?php  echo "$sizeVitaliteit";?></p>

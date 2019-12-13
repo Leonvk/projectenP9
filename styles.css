@@ -48,8 +48,9 @@ body {
     color: black;
 }
 
-.boxen-container a {
+.boxen-container a, .titel a {
 	text-decoration: none !important;
+    color: black;
 }
 
 .titel {
