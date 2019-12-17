@@ -14,13 +14,13 @@
     <div class="inlog-container">
       <!--registreer knoppen en functie-->
       <form action="" method="post">
-        <p>naam:</p>
+        <p>Naam:</p>
         <input type="text" name="newnaam" required>
         <br>
-        <p>wachtwoord:</p>
+        <p>Wachtwoord:</p>
         <input type="password" name="newwachtwoord" required>
         <br>
-        <p>wachtwoord:</p>
+        <p>Wachtwoord:</p>
         <input type="password" name="newwachtwoord2" required>
         <br>
         <input class="inlogB" type="submit" name="submitt" value="Registreren">

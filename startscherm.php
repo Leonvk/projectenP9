@@ -22,7 +22,7 @@
 			<p>Naam:</p>
 			<input type="text" name="username" value="" required>
 			<br>
-        	<p>wachtwoord:</p>
+        	<p>Wachtwoord:</p>
        		<input type="password" name="password" value="" required>
        		<br>
        		<input class="inlogB" type="submit" name="submit" value="Log In">

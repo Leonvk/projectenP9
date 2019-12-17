@@ -171,3 +171,27 @@ p.klein {
     /* margin-left: 30%; */
     text-align: center;
 }
+
+/*pc competiple css*/
+@media (max-width: 900px) {
+    .inlog-container {
+    margin-top: 20% !important;
+    }
+}
+
+
+@media (min-width: 901px) {
+    .inlog-container {
+    margin-top: 28% !important;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .inlog-container {
+    margin-top: 15% !important;
+    }
+    form p {
+        margin: 0 !important;
+    }
+}
