@@ -19,11 +19,11 @@ $_POST["datenowoef"] = NULL;
 				<input type="date" name="datetimeoef" class="Vitaliteit">
 				<br>
 			</div>
-			<div class="onderdeelvitaliteit">
+			<div id="onderonderdeel" class="onderdeelvitaliteit">
 				<p class="optioneel">(Hoe zwaar / hoe hard?)</p><p class="klein">(optioneel)</p>
 				<input type="number" step="any" min="0" max="9999" class="Vitaliteit" name="zwaar">
 			</div>
-			<div class="onderdeelvitaliteit">
+			<div id="onderonderdeel" class="onderdeelvitaliteit">
 				<p class="optioneel">(Hoe lang / hoevaak?)</p><p class="klein">(optioneel)</p>
 				<input type="number" step="any" min="0" max="9999" class="Vitaliteit" name="lang">
 			</div>

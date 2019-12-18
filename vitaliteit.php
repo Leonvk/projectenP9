@@ -17,7 +17,7 @@
 				<input type="date" name="datetime" class="Vitaliteit" value="">
 				<br>
 			</div>
-			<div class="onderdeelvitaliteit">
+			<div id="waarde" class="onderonderdeel, onderdeelvitaliteit">
 				<p>Waarde</p>
 				<input type="number" step="any" min="0" max="9999" class="Vitaliteit" name="waarde" required="">
 			</div>
