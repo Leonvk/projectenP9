@@ -172,54 +172,93 @@ p.klein {
     text-align: center;
 }
 
+td {
+    text-align: center;
+    border: 1px black solid;
+}
+
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+}
+
+th {
+    border: black solid 2px;
+}
+
+.meeting table {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.meeting {
+    text-align: center;
+}
+
 /*pc competiple css*/
-@media (max-width: 900px) {
+    @media (max-width: 900px){
+    table {
+        font-size: 2.3em !important;
+    }
+
+    .meeting p {
+        font-size: 3em !important;
+    }
+
+    .meeting table {
+        margin-left: 0% !important; 
+        margin-right: 0% !important; 
+        width: 0% !important;  
+    }
+
     .inlog-container {
-    margin-top: 20% !important;
+        margin-top: 20% !important;
     }
 }
 
 
+
 @media (min-width: 901px) {
     .inlog-container {
-    margin-top: 28% !important;
+        margin-top: 28% !important;
     }
 }
 
 
 @media (min-width: 1200px) {
     .inlog-container {
-    margin-top: 12% !important;
+        margin-top: 12% !important;
     }
     form p {
         margin: 0 !important;
     }
     .titel {
-    top: -10%;
+        top: -10%;
     }
     .boxen-container {
-    margin-top: 3%;
+        margin-top: 3%;
     }
     .box {
         font-size: 2.5em;
         margin: 0 0 2% 12.5%;
     }
     h1.titel {
-    width: 50%;
-    left: 25%;
+        width: 50%;
+        left: 25%;
     }
 
     .onderdeelvitaliteit {
-    border: 2px black solid;
-    width: 49%;
-    height: 250px;
-    margin: 0% 0% 0% 0%;
-    text-align: center;
-    float: left;
-    font-size: 2.5em;
-    text-decoration: none !important;
-    color: black;
-    font-size: 1.5em;
+        border: 2px black solid;
+        width: 49%;
+        height: 250px;
+        margin: 0% 0% 0% 0%;
+        text-align: center;
+        float: left;
+        font-size: 2.5em;
+        text-decoration: none !important;
+        color: black;
+        font-size: 1.5em;
     }
 
     #waarde {
@@ -231,3 +270,4 @@ p.klein {
     }
 
 }
+
