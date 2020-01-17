@@ -1,12 +1,21 @@
 <?php include("header.php"); 
 $sql = "SELECT `naamOefening`, `hoeLangGedaan`, `hoeZwaarGedaan`, `waneer` FROM `oefening` WHERE `gebruikersID`= $id ORDER BY `waneer` DESC ";
-$result = $conn->query($sql);
+
+$sql2 = "SELECT `naamOefening`, `hoeLangGedaan`, `hoeZwaarGedaan`, `waneer` FROM `oefening` WHERE `gebruikersID`= $id ORDER BY `waneer` ";
+
+$result = $conn->query($sql2);
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc() ) {
 		 $laatste = $row["naamOefening"];
 		 $laatste2 = $row["hoeLangGedaan"];
 		 $laatste3 = $row["hoeZwaarGedaan"];
 		 $laatste4 = $row["waneer"];
+		 			if($laatste2 == ""){
+				$laatste2 = "-";
+			}
+			if($laatste3 == ""){
+				$laatste3 = "-";
+			}
 		}
 	}
 
